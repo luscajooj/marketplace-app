@@ -1,12 +1,15 @@
 // Style
 import "./LoginScreen.css";
-
-import React from 'react'
+import logo from "../assets/Title.png";
 
 const LoginScreen = () => {
   return (
-    <div>LoginScreen</div>
-  )
-}
+    <div className="container">
+      <img src={logo} alt="logo" className="logo" />
 
-export default LoginScreen
+      
+    </div>
+  );
+};
+
+export default LoginScreen;
