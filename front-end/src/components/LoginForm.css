@@ -1,0 +1,81 @@
+.form_container {
+  height: 80%;
+  width: 403px;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-self: center;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  padding: 80px;
+  border-radius: 32px;
+  margin: 24px 24px 24px 0
+  
+}
+
+
+/* Cabeçalho do formulário */
+.form_header {
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  margin-bottom: 48px;
+}
+
+.form_header h1 {
+  color: #1d1d1d;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+.form_header p {
+  color: #666666;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Labels do formulário */
+.form_label {
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  height: 350px;
+  width: 403px;
+  margin-bottom: 48px;
+}
+
+.form_label h1 {
+  font-size: 16px;
+  color: #666666;
+  position: absolute;
+  margin-bottom: 12px;
+}
+
+.form_label p {
+  font-size: 16px;
+  color: #949494;
+  position: relative;
+  top: 15px;
+  display: inline; 
+}
+.form_label img {
+  position: relative;
+  top: 20px;
+  margin: 0 2.5px 0 2px;
+}
+
+.form_label .form_input {
+  margin-bottom: 20px;
+    border-style: none;
+    border-bottom: 1px solid #adadad;
+    width: 100%;
+}
+
+.form_label .form_input:focus {
+    outline: none;
+}
+
+.form_label .form_input:hover {
+  cursor: text;
+}
