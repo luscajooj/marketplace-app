@@ -64,6 +64,17 @@
 
 .form_label .view {
   margin-left: 190px;
+  background-image: url('../assets/view.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 24px;
+  width: 24px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  position: relative;
+  top: 15PX;
 }
 
 .form_label .form_input {

@@ -3,7 +3,6 @@ import "./LoginForm.css";
 
 import mail from "../assets/mail.png";
 import access from "../assets/access.png";
-import view from "../assets/view.png";
 
 const LoginForm = () => {
   const [emailFocused, setEmailFocused] = useState(false);
@@ -11,10 +10,15 @@ const LoginForm = () => {
 
   const [passwordFocused, setPasswordFocused] = useState(false);
   const [passwordValue, setPasswordValue] = useState("");
+  const [showPassword, setShowPassword] = useState(false);
 
   const shouldHideEmailLabel = emailFocused || emailValue.trim() !== "";
   const shouldHidePasswordLabel =
     passwordFocused || passwordValue.trim() !== "";
+
+  const togglePasswordVisibility = () => {
+    setShowPassword((prev) => !prev);
+  };
 
   return (
     <div className="form_container">
@@ -45,6 +49,7 @@ const LoginForm = () => {
 
           <label htmlFor="password">
             <h1>Senha</h1>
+
             <span
               className={`form_label-pass_span fade ${
                 shouldHidePasswordLabel ? "hidden" : ""
@@ -53,10 +58,17 @@ const LoginForm = () => {
               <img src={access} alt="" />
               <p>Sua senha de acesso</p>
             </span>
-            <img src={view} alt="" className={`view`} />
+
+            <button
+              type="button"
+              className="view"
+              onClick={togglePasswordVisibility}
+              aria-label={showPassword ? "Ocultar senha" : "Mostrar senha"}
+            ></button>
+
             <input
               className="form_input"
-              type="password"
+              type={showPassword ? "text" : "password"}
               name="password"
               id="password"
               value={passwordValue}
