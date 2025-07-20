@@ -9,3 +9,12 @@
   position: absolute;
   z-index: 1;
 }
+
+.background{
+  height: 496px;
+  width: 755px;
+  position: absolute;
+  z-index: -200;
+  left: 0;
+  top: 160px;
+}
