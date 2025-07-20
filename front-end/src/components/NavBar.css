@@ -1,0 +1,86 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background-color: #fbf4f4;
+  border-bottom: 1px solid #f5eaea;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  z-index: 1000;
+  font-family: "Poppins", sans-serif;
+}
+
+.nav_actions {
+  display: flex;
+  justify-content: right;
+}
+
+.nav_logo {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+  margin-left: 20px;
+}
+
+.nav_center {
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+}
+.nav_center span{
+    color: #666666;
+    font-size: 14px;
+}
+
+.nav_actions {
+  display: flex;
+  justify-content: right;
+  gap: 8px;
+  margin-right: 20px;
+  border-style: none;
+  align-items: center;
+}
+
+.new_product_button {
+  background-color: #f24d0d;
+  color: #ffffff;
+  width: 157px;
+  height: 40px;
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 8px;
+  border-radius: 10px;
+  padding: 16px;
+  border: none;
+}
+
+/* Tooltip bora moer!! */
+.tooltip-novo-produto {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #222;
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 6px;
+  white-space: nowrap;
+  font-size: 0.95rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  z-index: 10;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s;
+}
+
+.tooltip-novo-produto.visible {
+  opacity: 1;
+  pointer-events: auto;
+}

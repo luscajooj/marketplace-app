@@ -1,10 +1,13 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom"; 
 import "./LoginForm.css";
 
 import mail from "../assets/mail.png";
 import access from "../assets/access.png";
 
 const LoginForm = () => {
+  const navigate = useNavigate();
+
   const [emailFocused, setEmailFocused] = useState(false);
   const [emailValue, setEmailValue] = useState("");
 
@@ -20,13 +23,23 @@ const LoginForm = () => {
     setShowPassword((prev) => !prev);
   };
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    if (emailValue && (passwordValue => 6)) {
+      navigate("/create-product");
+    } else {
+      alert("Você precisa de um email e senha válidos");
+    }
+  };
+
   return (
     <div className="form_container">
       <div className="form_header">
         <h1>Acesse sua conta</h1>
         <p>Informe seu e-mail e senha para entrar</p>
       </div>
-      <form action="">
+      <form onSubmit={handleSubmit}>
         <div className="form_label">
           <label htmlFor="email">
             <h1>E-mail</h1>
