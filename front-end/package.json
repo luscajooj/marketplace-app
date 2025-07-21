@@ -6,7 +6,24 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "lint": "eslint .",
+    "lint": "eslint .",[22:24:12.947] Running build in Washington, D.C., USA (East) – iad1
+[22:24:12.948] Build machine configuration: 2 cores, 8 GB
+[22:24:12.980] Cloning github.com/luscajooj/marketplace-app (Branch: main, Commit: 7ab7f5e)
+[22:24:13.122] Previous build caches not available
+[22:24:13.323] Cloning completed: 342.000ms
+[22:24:15.064] Running "vercel build"
+[22:24:15.590] Vercel CLI 44.4.3
+[22:24:16.615] npm error code ENOENT
+[22:24:16.616] npm error syscall open
+[22:24:16.616] npm error path /vercel/path0/package.json
+[22:24:16.616] npm error errno -2
+[22:24:16.617] npm error enoent Could not read package.json: Error: ENOENT: no such file or directory, open '/vercel/path0/package.json'
+[22:24:16.617] npm error enoent This is related to npm not being able to find a file.
+[22:24:16.617] npm error enoent
+[22:24:16.619] npm error A complete log of this run can be found in: /vercel/.npm/_logs/2025-07-21T01_24_16_542Z-debug-0.log
+[22:24:16.628] Error: Command "npm run build" exited with 254
+[22:24:16.812] 
+[22:24:19.664] Exiting build container
     "preview": "vite preview"
   },
   "dependencies": {
